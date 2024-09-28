@@ -1,6 +1,49 @@
-# Gyroscopic_motion
-This motion solved is created by modifying "rotatingMotion" solidBodyMotionSolver of OpenFOAM v12 to define local as well as global axis of rotation instead of single axis of rotation. It is tested only in OpenFOAM v12.
-A sample of usage of this solver in dynamicMeshDict is given in the simple tutorial which can be executed using Allrun script. Pretty much everything in dynamicMeshDict is self explainatory.
-It is recommended to move the motionSolvers folder to src folder in working user directory.
-Navigate to motionSolvers directory in bash and run wmake libso to compile the code and your new motion solver is ready!
-Any suggestion on improving the code/adding new functionality/more generalization is highly appreciated.
+
+# Gyroscopic Motion Solver for OpenFOAM
+
+## Introduction
+A custom solidBodyMotionSolver for OpenFOAM, extending the rotatingMotion solver to support local and global axes of rotation.
+
+
+## Features
+
+* Supports local and global axes of rotation
+* Compatible with OpenFOAM v12
+* Tested with tutorial of water in a tank performing gyroscopic motion
+
+
+## Usage
+
+### Installation
+
+1. Move motionSolvers folder to src directory.
+2. Navigate to motionSolvers and run `wmake libso`.
+
+### Integration
+
+1. Update dynamicMeshDict with provided sample.
+2. Run Allrun script for tutorial.
+
+
+## Requirements
+OpenFOAM v12
+
+
+## License
+This project is licensed under the MIT License. See LICENSE file for details.
+
+
+## Contributing
+Pull requests welcome! Contact VAIBHAV V B for feedback.
+
+
+## Authors
+VAIBHAV V B
+
+
+## Acknowledgments
+Dynamics and Control of Mechanical Systems - NPTEL course - Prof. Ashitava Ghosal
+OpenFOAM v12 documentation, Coding Style Guide
+
+
+
